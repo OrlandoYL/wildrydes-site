@@ -71,7 +71,7 @@ var WildRydes = window.WildRydes || {};
     }
 
     function signin(email, password, onSuccess, onFailure) {
-        var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails({
+        var authenticationDetails = new AmazonCognitoIdentity.signUp({
             Username: toUsername(email),
             Password: password
         });
